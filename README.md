@@ -1,0 +1,2 @@
+- fix navbar -> when hidden still changes cursor type
+  - FIXED: Drop navbar behind hero when not visible

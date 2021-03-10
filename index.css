@@ -1,0 +1,239 @@
+:root {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.page-height {
+  height: calc(100vh - 70px);
+}
+
+.short-trans {
+  transition: 0.3s
+}
+
+.links {
+  text-decoration: none;
+}
+
+.navbar {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 70px;
+  z-index: 0;
+  transition: 0.7s;
+}
+
+.section {
+  left: 2vw;
+}
+
+.contact {
+  right: 2vw;
+  cursor: pointer;
+}
+
+.my-name {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  margin: 0;
+}
+
+.hero img {
+  position: fixed;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.caption {
+  opacity: 0;
+}
+
+.hero-caption {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.contact-caption {
+  right: 10vw;
+}
+
+.github-caption {
+  right: 37vw;
+}
+
+.hero-div {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hero-div::after, .about > .header::after, .hero-div:hover::before, .navbar > .my-name:hover::after, .contact:hover::after {
+  width: 100%;
+}
+
+.hero-div::before, .hero-div:hover::after, .navbar > .my-name::after, .contact::after {
+  width: 0;
+}
+
+.hero-div::before, .hero-div::after, .navbar > .my-name::after, .header::after , .contact::after {
+  content: '';
+  display: block;
+  margin-top: 1.25vh;
+  height: 0.5vh;
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.about > .header::after, .projects > .header::after {
+  background-color: #000000;
+}
+
+.about {
+  top: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+.projects {
+  top: calc(200vh - 70px);
+  width: 100vw;
+  box-shadow: 0 -5px 5px 0px #8A8A8A;
+  z-index: 3;
+}
+
+.hobbies {
+  top: calc(300vh - 140px);
+  color: #F8F7FF;
+  width: 100vw;
+  box-shadow: 0 -5px 5px 0px #8A8A8A;
+  z-index: 4;
+}
+
+.fixing {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  opacity: 1;
+}
+
+.about-header {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.proj-header, .hobby-header {
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.photo {
+  top: 15vh;
+  right: 8vw;
+  width: 444px;
+  height: 260px;
+  box-shadow: 0 0 8px 3px #595959;
+}
+
+.photo img {
+  margin: 10px;
+  width: 424px;
+  height: 240px;
+}
+
+.bio {
+  width: 25vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  color: #000000;
+  left: 8vw;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.projects-info {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20vh;
+  width: 40%;
+  height: 10vh;
+  background-color: #152947;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.projects-info h3, .projects-info h2 {
+  text-align: center;
+  margin-top: 1vh;
+  line-height: 8vh;
+}
+
+.display-projects {
+  width: 20vw;
+  height: 46vh;
+  padding: 10px;
+  border-radius: 5px;
+  height: auto;
+}
+
+.dp-left {
+  left: 5vw;
+  top: 15vh;
+}
+
+.dp-left img {
+  width: 100%;
+}
+
+.dp-mid {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40vh;
+
+}
+
+.dp-mid img, .dp-mid {
+  width: 27vw;
+}
+
+.dp-right {
+  right: 5vw;
+  top: 15vh;
+}
+
+.dp-text {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  right: 5vw;
+  top: 35vh;
+}
