@@ -170,6 +170,16 @@ body {
   height: 240px;
 }
 
+.photo-github {
+  top: 60vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #FFFFFF;
+  padding: 10px;
+  
+  box-shadow: 0 0 8px 3px #595959;
+}
+
 .bio {
   width: 25vw;
   padding-left: 10px;
